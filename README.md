@@ -2,6 +2,8 @@
 
 **Deduplication, expiry and ordering at the boundary between AI agents.**
 
+![hebom-buffer demo — 3 of 12 guarantees, run against the installed wheel](demo.gif)
+
 ### Using A2A?
 
 A2A defines how agents discover and communicate.
