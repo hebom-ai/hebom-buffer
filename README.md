@@ -2,7 +2,7 @@
 
 **Deduplication, expiry and ordering at the boundary between AI agents.**
 
-![hebom-buffer demo — 3 of 12 guarantees, run against the installed wheel](demo.gif)
+![hebom-buffer demo — 3 of 12 guarantees, run against the installed wheel](docs/demo.gif)
 
 ### Using A2A?
 
@@ -160,7 +160,8 @@ wheel, not against the source tree.
 
 ```bash
 pip install hebom-buffer
-python tools/e2e_attack.py     # prints 3/12 and why
+git clone https://github.com/hebom-ai/hebom-buffer && cd hebom-buffer
+python tools/e2e_attack.py     # prints 3/12 and why — runs against the installed wheel
 ```
 
 If that number ever disagrees with this table, the table is wrong. A test
@@ -217,6 +218,7 @@ Our first buffer had none of the three guarantees above. It lost items on
 overload, delivered duplicates, and had no expiry.
 
 ```bash
+git clone https://github.com/hebom-ai/hebom-buffer && cd hebom-buffer
 python -m pytest tests/          # unit tests
 python tools/e2e_attack.py       # adversarial, against the installed wheel
 ```
